@@ -29,7 +29,7 @@
 
 1. 解析路由,可以知道有多少请求
 1. 解析 controller目录下面的所有类来获取模块
-1. 解析controller对应的目录typings下的custom下的相同名称的.d.ts 的声明文件（另外typings下面的common.d.ts存放公共的类型信息）
+1. 解析controller对应的目录typings下的custom下的相同文件名的.d.ts 的声明文件（另外typings下面的common.d.ts存放公共的类型信息）
 1. 生成 swagger 的 openApi 规范 json 文件
 1. 保存到本地或上传 Yapi
    <a name="iTJLT"></a>
@@ -47,7 +47,7 @@ npm install qianmi-egg-swagger --save-dev
 
 建议是写在 package.json 的 scripts.postpublish 里面
 
-用swagger-ui生成在线文档
+用swagger-ui生成在线文档 默认端口是9999
 ```
 "ui": "./node_modules/.bin/qm-egg-doc swagger-ui"
 ```
@@ -215,7 +215,5 @@ declare module 'shop' {
 
 # 不足
 
-- 还有很多功能未实现;
-- 暂未支持直接访问 swagger 页面
 - 如有 bug 请及时告知，或者一起修改一下哈
-- 返回值是基本类型处理
+
