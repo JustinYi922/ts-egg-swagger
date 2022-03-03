@@ -1,8 +1,27 @@
+
+# ts-egg-swagger插件
+
+## 目标
+
+让 基于typescript的eggjs项目可以像 javaBFF 一样，通过约定配置，就可以生成swagger接口文档。
+
+## 目录结构
+```
+.
+├── lerna.json
+├── package.json
+├── packages
+│   ├── egg-code-prompt --配套使用的vscode代码提示插件代码已经移到 [这里](https://github.com/JustinYi922/egg-code-prompt)
+│   ├── egg-example-------插件使用demo
+│   └── egg-swagger-------egg-swagger插件
+└── readme.md
+
+
+```
+
 <a name="YGHED"></a>
 
-# 目标是什么？
 
-让 eggjs 项目可以像 javaBFF 一样，通过约定配置，就可以自动生成 Yapi 接口文档。
 <a name="9THqU"></a>
 
 # 插件原理
