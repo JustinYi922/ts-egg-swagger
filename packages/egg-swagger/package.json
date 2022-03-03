@@ -1,0 +1,38 @@
+{
+  "name": "qianmi-egg-swagger",
+  "version": "0.1.1",
+  "description": "针对ts类型的eggjs项目自动生成swagger的接口文档插件",
+  "bin": {
+    "qm-egg-doc": "./lib/index.js"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "prepublish": "rm -rf lib && tsc",
+    "test": "cd .. && cd egg-example && npm install && npm run doc",
+    "ui": "cd .. && cd egg-example && npm install && npm run ui"
+  },
+  "keywords": [
+    "egg",
+    "eggjs",
+    "swagger",
+    "yapi"
+  ],
+  "author": "JustinYi922",
+  "maintainers": [
+    "admin"
+  ],
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://registry.npm.qianmi.com"
+  },
+  "repository": "git@git.dev.qianmi.com:OF2640/qm-egg-swagger.git",
+  "dependencies": {
+    "express": "^4.17.3",
+    "typescript": "^4.5.4",
+    "urllib": "^2.37.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.11"
+  }
+}

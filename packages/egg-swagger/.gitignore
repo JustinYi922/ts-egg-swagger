@@ -1,0 +1,8 @@
+logs/
+npm-debug.log
+node_modules/
+.idea/
+.history/
+.DS_Store
+*.swp
+swagger
