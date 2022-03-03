@@ -11,7 +11,6 @@
 ├── lerna.json
 ├── package.json
 ├── packages
-│   ├── egg-code-prompt --配套使用的vscode代码提示插件代码已经移到 [这里](https://github.com/JustinYi922/egg-code-prompt)
 │   ├── egg-example-------插件使用demo
 │   └── egg-swagger-------egg-swagger插件
 └── readme.md
@@ -20,6 +19,8 @@
 ```
 
 <a name="YGHED"></a>
+ 配套使用的vscode代码提示插件 egg-code-prompt [https://github.com/JustinYi922/egg-code-prompt](https://github.com/JustinYi922/egg-code-prompt)
+
 
 
 <a name="9THqU"></a>
@@ -28,7 +29,7 @@
 
 1. 解析路由,可以知道有多少请求
 1. 解析 controller目录下面的所有类来获取模块
-1. 解析controller对应的目录typings下的custom下的相同名称的.d.ts 的声明文件（另外typings下面的index.d.ts存放公共的类型信息）
+1. 解析controller对应的目录typings下的custom下的相同名称的.d.ts 的声明文件（另外typings下面的common.d.ts存放公共的类型信息）
 1. 生成 swagger 的 openApi 规范 json 文件
 1. 保存到本地或上传 Yapi
    <a name="iTJLT"></a>
