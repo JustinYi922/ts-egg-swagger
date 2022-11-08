@@ -72,7 +72,7 @@ function getBaseDefinitions(tsDir: string) {
                 let example = "";
                 let items = {}; //数组才用到
                 let xRule: any = [];
-
+                let $ref: string = "";
                 // 数组 T[]或者Array<T>
                 if (type.endsWith("[]")) {
                   type = type.replace("[]", "");
@@ -96,6 +96,9 @@ function getBaseDefinitions(tsDir: string) {
                   }
                   type = "array";
                 } else if (type == "PlainObject") {
+                  type = "object";
+                } else if (!NotNeedRefType.includes(type)) {
+                  $ref = "#/definitions/" + type;
                   type = "object";
                 }
 
@@ -186,6 +189,9 @@ function getBaseDefinitions(tsDir: string) {
                 }
                 if (items && Object.keys(items).length > 0) {
                   pre[paramName].items = items;
+                }
+                if ($ref) {
+                  pre[paramName].$ref = $ref;
                 }
                 if (xRule && xRule.length > 0) {
                   xRules[paramName] = xRule;

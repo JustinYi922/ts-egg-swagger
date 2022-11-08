@@ -1,6 +1,6 @@
 {
   "name": "qianmi-egg-swagger",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "针对ts类型的eggjs项目自动生成swagger的接口文档插件",
   "bin": {
     "qm-egg-doc": "./lib/index.js"
@@ -21,7 +21,8 @@
   ],
   "author": "JustinYi922",
   "maintainers": [
-    "admin","zhengyi2369"
+    "admin",
+    "zhengyi2369"
   ],
   "license": "ISC",
   "repository": "https://github.com/JustinYi922/ts-egg-swagger.git",
